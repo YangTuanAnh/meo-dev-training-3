@@ -24,3 +24,16 @@ a {
     background: black;
   }
 }
+
+@font-face {
+  font-family: "iCiel Brush Up";
+  src: url("../public/fonts/brush-up.woff2") format("woff2");
+}
+@font-face {
+  font-family: "iCiel BC Cubano";
+  src: url("../public/fonts/iCielBCCubano-Normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "iCiel BC Old Style";
+  src: url("../public/fonts/iCielBCOldStyle-Regular.woff2") format("woff2");
+}
