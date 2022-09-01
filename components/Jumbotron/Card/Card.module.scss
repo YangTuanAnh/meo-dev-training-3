@@ -1,0 +1,16 @@
+@import "../../../styles/variables";
+.container {
+    color:$dark;
+    font-family: "iCiel BC Old Style";
+    flex-grow: 1;
+    img {
+        border-radius: 30px;
+        width: 100%;
+        &:hover {
+            transform: scale(1.01);
+            box-shadow: 5px 5px 5px $dark;
+            cursor: pointer;
+            transition-duration: 0.5s;
+        }
+    }
+}

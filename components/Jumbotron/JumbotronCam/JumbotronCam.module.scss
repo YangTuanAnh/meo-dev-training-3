@@ -1,0 +1,83 @@
+@import "../../../styles/variables";
+
+.container {
+    background-color: $primary;
+    padding: 2rem;
+    color: $dark;
+    font-family: "iCiel BC Old Style";
+    h2 {
+        font-family: "iCiel BC Cubano";
+        @media screen and (max-width:920px) {
+            border-bottom: 2px solid $dark;
+            padding-bottom: 1rem;
+        }
+    }
+    h3 {
+        font-size: x-large;
+    }
+    p{
+        font-size: large;
+    }
+    .main {
+        @media screen and (min-width:920px) {
+            border-left: 5px solid $dark;
+            padding-left: 2rem;
+        }
+    }
+    .cards {
+        @media screen and (min-width: 920px) {
+            display:grid;
+            grid-template-columns: auto auto;
+        }
+        align-items: center;
+
+        & > div {
+            flex-grow: 1;
+
+            & > div {
+                display: flex;
+                flex-direction: column;
+                @media screen and (min-width: 920px) {
+                    flex-direction: row;
+                }
+                align-items: center;
+            }
+            .colCard {
+                img {
+                    height: 500px;
+                }
+                flex-direction: column;
+            }
+        }
+
+        img {
+            flex-grow: 1;
+            margin: 1rem;
+            border-radius: 30px;
+            min-height: 300px;
+            &:hover {
+                transform: scale(1.01);
+                box-shadow: 5px 5px 5px $dark;
+                cursor: pointer;
+                transition-duration: 0.5s;
+            }
+        }
+    }
+    .btnContainer{
+        display: flex;
+        justify-content: center;
+        button {
+            background: linear-gradient($secondary, $primary);
+            border-radius: 999999px;
+            border: 0;
+            font-family: "iCiel BC Cubano";
+            font-size: xx-large;
+            color: $primary;
+            padding: 1rem 2rem;
+            margin: 1rem;
+            &:hover {
+                opacity: 50%;
+            }
+        }
+    }
+}

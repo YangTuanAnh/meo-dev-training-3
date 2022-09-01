@@ -1,0 +1,33 @@
+@import "../../../styles/variables";
+.container {
+    background-color: $primary;
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 920px) {
+        flex-direction: row-reverse;
+    }
+    align-items: center;
+    h2 {
+        color: $dark;
+        font-size:64px;
+        margin: 4vw;
+    }
+    div {
+        background-color: $secondary;
+        color:$primary;
+        font-family: "iCiel BC Old Style";
+        display: flex;
+        flex-direction: column;
+        @media screen and (min-width: 920px) {
+            flex-direction: row;
+        }
+        align-items: center;
+        margin: 4vw;
+        border-radius: 5rem;
+
+        p {
+            padding: 4vw;
+            font-size: x-large;
+        }
+    }
+}

@@ -1,3 +1,4 @@
+@import '../../styles/variables';
 .Hero {
     background-image: url('../../public/images/hero.jpg');
     width: 100%;
@@ -7,36 +8,67 @@
     background-size: cover;
 
     display: flex;
-    //align-items: center;
-    justify-content:space-between;
-
-    input {
-        width: 100%;
-        background-color:#CFC89A;
-        border:none;
-        border-radius:9999999px;
-        opacity:0.9;
-        margin: 2vw;
-        height: 2vw;
+    @media screen and (max-width:600px) {
+        flex-direction: column-reverse;
     }
+
+    
     div {
         flex-grow: 1;
-        padding: 2vw;
-        h1 {
-            font-family: "iCiel Brush Up";
-            font-size: 11vw;
-            line-height: 12vw;
-            &.primaryHeader{
-                position:absolute;
-                transform: translate(0, -6vw);
-                color:#6B4D35;
+        margin: 2rem;
+        &.search {
+            display: flex;
+            align-items: center;
+            form {
+                display: flex;
+                align-items: center;
+                background-color:$primary;
+                border:none;
+                border-radius:9999999px;
+                padding: 0 1em;
+                opacity:0.9;
+                width: 100%;
+                color: $dark;
+                &:hover {
+                    opacity: 80%;
+                }
+    
+                input {
+                    width: 100%;
+                    background-color:transparent;
+                    border:none;
+                    margin: 1em;
+                    font-family: "iCiel BC Cubano";
+                    font-size: medium;
+                    &:focus {
+                        outline: none;
+                    }
+                }
             }
-            &.secondaryHeader{
-                position:absolute;
-                transform: translate(0.5vw, -5.5vw);
-                color:#E3CBB8;
+            
+        }
+        &.title {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            h1 {
+                font-family: "iCiel Brush Up";
+                font-size: 11vw;
+                line-height: 12vw;
+                letter-spacing: 0.8vw;
+                &.primaryHeader{
+                    position:absolute;
+                    transform: translate(0, -6vw);
+                    color:#6B4D35;
+                }
+                &.secondaryHeader{
+                    position:absolute;
+                    transform: translate(0.5vw, -5.5vw);
+                    color:#E3CBB8;
+                }
             }
         }
     }
+    
     
 }
