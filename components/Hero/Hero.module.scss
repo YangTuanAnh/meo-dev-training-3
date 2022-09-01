@@ -37,7 +37,7 @@
                     width: 100%;
                     background-color:transparent;
                     border:none;
-                    margin: 1em;
+                    margin: 1rem;
                     font-family: "iCiel BC Cubano";
                     font-size: medium;
                     &:focus {
@@ -53,17 +53,22 @@
             text-align: center;
             h1 {
                 font-family: "iCiel Brush Up";
-                font-size: 11vw;
-                line-height: 12vw;
-                letter-spacing: 0.8vw;
+                font-size: 4rem;
+                line-height: 6rem;
+                letter-spacing: 0.5rem;
+                @media screen and (min-width: 920px) {
+                    font-size: 8rem;
+                    line-height: 12rem;
+                    letter-spacing: 1rem;
+                }
                 &.primaryHeader{
                     position:absolute;
-                    transform: translate(0, -6vw);
+                    transform: translate(0, -4rem);
                     color:#6B4D35;
                 }
                 &.secondaryHeader{
                     position:absolute;
-                    transform: translate(0.5vw, -5.5vw);
+                    transform: translate(0.5rem, -3.5rem);
                     color:#E3CBB8;
                 }
             }

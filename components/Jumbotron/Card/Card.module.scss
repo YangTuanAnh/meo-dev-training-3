@@ -8,9 +8,9 @@
         width: 100%;
         &:hover {
             transform: scale(1.01);
-            box-shadow: 5px 5px 5px $dark;
+            box-shadow: 5px 5px 10px $dark;
             cursor: pointer;
-            transition-duration: 0.5s;
+            transition-duration: 0.3s;
         }
     }
 }

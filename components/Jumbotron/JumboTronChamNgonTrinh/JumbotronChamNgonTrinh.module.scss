@@ -10,7 +10,7 @@
     h2 {
         color: $dark;
         font-size:64px;
-        margin: 4vw;
+        margin: 4rem;
     }
     div {
         background-color: $secondary;
@@ -22,11 +22,11 @@
             flex-direction: row;
         }
         align-items: center;
-        margin: 4vw;
+        margin: 4rem;
         border-radius: 5rem;
 
         p {
-            padding: 4vw;
+            padding: 4rem;
             font-size: x-large;
         }
     }

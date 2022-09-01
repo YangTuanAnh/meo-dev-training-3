@@ -19,7 +19,7 @@
         padding: 0;
         li {
             list-style-type: none;
-            padding: 4% 0;
+            padding: 1rem;
             &:hover {
                 opacity: 50%;
             }
@@ -39,8 +39,8 @@
         button {
             border-radius: 9999999px;
             border: 0;
-            margin-bottom: 1vw;
-            padding: 1vw 2vw;
+            margin-bottom: 1rem;
+            padding: 1rem 1rem;
             font-family: "iCiel BC Cubano";
             font-size: xx-large;
             &:hover {
